@@ -13,5 +13,6 @@
   "onvan3": "",
   "tozih3": "",
   "tasvir3": "",
-  "Link3": ""
+  "Link3": "",
+  "offline text": ""
 }
