@@ -1,9 +1,9 @@
 {
   "Unavailable1": "Yes",
-  "onvan1": "",
-  "tozih1": "",
-  "tasvir1": "",
-  "Link1": "",
+  "onvan1": "پروکسی تلگرام",
+  "tozih1": "پروکسی های ضد فیلتر و پینگ پایین",
+  "tasvir1": "https://images.app.goo.gl/cyRCaJnWWWZUp6Ds6",
+  "Link1": "https://t.me/mtpproxyirani",
   "Unavailable2": "",
   "onvan2": "",
   "tozih2": "",
