@@ -1,5 +1,5 @@
 {
-  "Unavailable1": "Yes",
+  "Unavailable1": "No",
   "onvan1": "پروکسی تلگرام",
   "tozih1": "پروکسی های ضد فیلتر و پینگ پایین",
   "tasvir1": "https://s8.uupload.ir/files/images_khae.jpeg",
