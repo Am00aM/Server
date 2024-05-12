@@ -3,18 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ماشین خطرناک</title>
-<link rel="stylesheet" href="styles.css">
+<title>Street Racing Game</title>
+<style>
+    .container {
+        position: relative;
+        width: 400px;
+        height: 600px;
+        background-color: #f3f3f3;
+        border: 2px solid #333;
+    }
+    
+    .car {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 80px;
+        background-color: red;
+    }
+    
+    .obstacle {
+        position: absolute;
+        width: 60px;
+        height: 20px;
+        background-color: blue;
+    }
+</style>
 </head>
 <body>
-<div class="game">
-  <div class="car" id="car"></div>
-  <div class="road">
-    <div class="obstacle" id="obstacle"></div>
-  </div>
+<div class="container">
+    <div class="car"></div>
+    <div class="obstacle" style="top: -100px; left: 20px;"></div>
+    <div class="obstacle" style="top: -200px; left: 70px;"></div>
+    <div class="obstacle" style="top: -300px; left: 140px;"></div>
 </div>
-<button onclick="moveLeft()">⬅️</button>
-<button onclick="moveRight()">➡️</button>
-<script src="script.js"></script>
+
+<script>
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'ArrowLeft') {
+            moveCar(-50);
+        }
+        if (event.key === 'ArrowRight') {
+            moveCar(50);
+        }
+    });
+
+    function moveCar(distance) {
+        const car = document.querySelector('.car');
+        const currentLeft = parseInt(window.getComputedStyle(car).getPropertyValue('left'));
+        const newLeft = currentLeft + distance;
+
+        if (newLeft >= 0 && newLeft <= 350) {
+            car.style.left = newLeft + 'px';
+        }
+    }
+
+    function moveObstacles() {
+        const obstacles = document.querySelectorAll('.obstacle');
+        obstacles.forEach(function(obstacle) {
+            let currentTop = parseInt(window.getComputedStyle(obstacle).getPropertyValue('top'));
+            let newTop = currentTop + 5;
+
+            if (newTop > 600) {
+                newTop = -100;
+                let randomPos = Math.floor(Math.random() * 3) * 70 + 20;
+                obstacle.style.left = randomPos + 'px';
+            }
+
+            obstacle.style.top = newTop + 'px';
+        });
+    }
+
+    setInterval(moveObstacles, 50);
+</script>
 </body>
 </html>
