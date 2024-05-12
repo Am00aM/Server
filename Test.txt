@@ -1,4 +1,17 @@
-<head>
- <meta charset="utf-8">
-</head>
-<html dir="rtl" lang="fa-IR">
+{
+  "unable1": "",
+  "onvan1": "",
+  "tozih1": "",
+  "tasvir1": "",
+  "Link1": "",
+  "unable2": "",
+  "onvan2": "",
+  "tozih2": "",
+  "tasvir2": "",
+  "Link2": "",
+  "unable3": "",
+  "onvan3": "",
+  "tozih3": "",
+  "tasvir3": "",
+  "Link3": ""
+}
