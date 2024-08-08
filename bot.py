@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-from telegram.ext import Updater, CommandHandler
 
 from telegram.ext import Updater, CommandHandler
-updater = Updater('TOKEN')
+updater = Updater('7244681466:AAF_Wt7KbmfNU_tPQoH8dLEOuIQgm-Clo_A')
 
 def start_method(bot, update):
     bot.sendMessage(update.message.chat_id, "سلام")
