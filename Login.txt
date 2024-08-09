@@ -1,6 +1,5 @@
-[
-  {
-    "amirrx0": "Amir1385",
-    "Amir": "1385"
-  }
-]
+{
+  "AmirRX0": "Amir1385",
+  "Amir": "1385",
+  "AAA": "GGG"
+}
